@@ -1,6 +1,10 @@
 # react-django-todolist
 
 ## Django Part
+```
+pip install django-cors-headers djangorestframework
+
+```
 
 In the root directory
 #### `python3 manage.py makemigrations`
