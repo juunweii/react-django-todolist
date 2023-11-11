@@ -13,8 +13,7 @@ frontend/.eslintcache
 db.sqlite3
 *.pyc
 __pycache__/
-todo/migrations/ 
-
+*_initial.py
 
 # Node.js 
 *.pack
