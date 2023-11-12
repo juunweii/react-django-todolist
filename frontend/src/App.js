@@ -18,8 +18,16 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.refreshList();
+    axios.get('/csrf/')
+      .then((response) => {
+        this.csrftoken = response.data.csrfToken;
+        this.refreshList();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
+  
 
   refreshList = () => {
     axios
